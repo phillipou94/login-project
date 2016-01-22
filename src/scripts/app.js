@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import WelcomeMsg from './components/welcomeMsg';
+import Registration from './components/Registration';
 
 require('../styles/base.scss');
 
 ReactDOM.render(
-  <WelcomeMsg />, document.getElementById('content')
+  <Registration />, document.getElementById('content')
 );
