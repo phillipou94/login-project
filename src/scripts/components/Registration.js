@@ -1,5 +1,6 @@
 import React from 'react';
 import AccountFields from './AccountFields'
+import SurveyFields from './SurveyFields'
 
 
 var fieldValues = {
@@ -23,6 +24,12 @@ var Registration = React.createClass({
                   fieldValues = {fieldValues} 
                   updateValues = {this.updateValues}
                   nextStep = {this.nextStep}/>;
+      case 2:
+        return <SurveyFields
+                  fieldValues = {fieldValues}
+                  updateValues = {this.updateValues}
+                  nextStep = {this.nextStep}
+                  previousStep = {this.previousStep}/>;
   		default: 
   			return <h1> Hello World!</h1>;
   	}
@@ -33,11 +40,11 @@ var Registration = React.createClass({
   },
 
   nextStep: function() {
-    this.setState({step: this.step + 1})
+    this.setState({step: this.state.step + 1})
   },
 
   previousStep: function() {
-    this.setState({step: this.step - 1})
+    this.setState({step: this.state.step - 1})
   }
 });
 

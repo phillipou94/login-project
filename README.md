@@ -20,6 +20,4 @@ Quick starter template used to create React.js projects
 
         http://<your-domain>/index.html
 
-## Credit
-Credit to mvilrokx whose repo I originally cloned
 

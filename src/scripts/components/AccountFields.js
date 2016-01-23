@@ -9,6 +9,7 @@ var AccountFields = React.createClass({
 	render: function() {
 		return(
 			<div>
+				<h1> Account Details </h1>
 				<label>Name</label>
 				<input type = "text" ref = "name" defaultValue = {this.props.fieldValues.name}/>
 				<label>Email</label>
